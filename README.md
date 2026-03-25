@@ -1,59 +1,95 @@
-# Advanced-ATS-Resume-Checker
+# Resume ATS Checker 📄🤖
 
+![Application Screenshot](https://github.com/user-attachments/assets/f915239c-efa0-40dd-967d-d72fc0506ca0)
 
-![image](https://github.com/user-attachments/assets/f915239c-efa0-40dd-967d-d72fc0506ca0)
+## Overview 🔎
 
-### What's This All About?
+Many companies use **Applicant Tracking Systems (ATS)** to filter resumes before they are reviewed by recruiters. As a result, a large proportion of applications are automatically rejected due to formatting issues or missing keywords.
 
-75% of resumes never reach human eyes. They're killed by ATS (Applicant Tracking Systems).
+**Resume ATS Checker** analyzes resumes using an AI model to simulate how an ATS system evaluates applications and provides actionable feedback to improve resume quality.
 
-ResumeATS Pro is here to change that game.
+This project helps users understand how their resume may be interpreted by automated screening systems and how to improve it.
 
-### What Does It Do?
+---
 
-1. Analyzes resumes like an ATS would
-2. Gives actionable feedback
-3. Helps optimize resumes for ATS approval
-4. Provides a chat feature for personalized advice
+## Features 🚀
 
-### Why Should You Care?
+* 📊 **ATS-style resume analysis**
+* 💡 **AI-powered feedback and suggestions**
+* 📈 **Resume optimization guidance**
+* 💬 **Interactive chat interface for personalized advice**
 
-- If you're a job seeker: This tool could be your ticket to more interviews
-- If you're a developer: You can help change lives (and maybe land a cool job yourself)
+---
 
-### Tech Stack
+## Tech Stack 🛠️
 
-- Frontend: Streamlit
-- AI Brain: Google's Generative AI
-- PDF Handling: PyPDF2
+* **Frontend:** Streamlit
+* **AI Model:** Google Gemini 3 Flash ⚡
+* **PDF Processing:** PyPDF2 📑
 
-### How to Use
+---
 
-1. Clone this repo
-2. Install dependencies: `pip install -r requirements.txt`
-3. Set up your Google API key in a `.env` file
-4. Run with: `streamlit run app.py`
+## Improvements in This Version 🔧
 
-### Want to Contribute?
+This repository includes several fixes and improvements compared to the original implementation:
 
-Hell yeah! Here's how:
+* ✔️ Fixed the **incorrect run command** in the original `README.md`.
+* ⚡ Updated the AI model to **Gemini 3 Flash**, providing faster responses and improved analysis accuracy.
+* 🐞 Fixed a bug that prevented the application from running by **adding missing dependencies to `requirements.txt`**.
 
-1. Fork the repo
-2. Create your feature branch: `git checkout -b my-new-feature`
-3. Commit your changes: `git commit -am 'Add some feature'`
-4. Push to the branch: `git push origin my-new-feature`
-5. Submit a pull request
+---
 
-### License
+## Installation 💻
 
-MIT License. See `LICENSE` for more information.
+Clone the repository:
 
-### Questions?
+```bash
+git clone https://github.com/lucaterpirla/Resume-ATS-Check.git
+cd Resume-ATS-Check
+```
 
-Hit me up in the issues or at [mayankjainsikar1999@gmail.com].
+Install dependencies:
 
-### Remember
+```bash
+pip install -r requirements.txt
+```
 
-You're not just coding. You're changing lives. One resume at a time.
+Edit the `.env` file and add your **Google API key**:
 
-Now go build something awesome! 
+```bash
+GOOGLE_API_KEY="your_api_key_here"
+```
+
+---
+
+## Running the Application ▶️
+
+Start the Streamlit app:
+
+```bash
+streamlit run resumeATS.py
+```
+
+The application will open automatically in your browser.
+
+---
+
+## Project Origin 📚
+
+This repository is based on the original project:
+
+**Advanced-ATS-Resume-Checker**
+
+Additional fixes and improvements have been implemented to ensure correct execution and updated AI capabilities.
+
+---
+
+## License 📜
+
+This project is released under the **MIT License**. See the `LICENSE` file for details.
+
+---
+
+## Contact 📬
+
+For questions, suggestions, or improvements, please open an **Issue** in this repository.
