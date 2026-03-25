@@ -7,7 +7,7 @@ from PyPDF2 import PdfReader
 # Load environment variables and configure API
 load_dotenv()
 genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
-model = genai.GenerativeModel("gemini-1.5-flash")
+model = genai.GenerativeModel("gemini-3-flash-preview")
 
 # Function to get Gemini output
 def get_gemini_output(pdf_text, prompt):
